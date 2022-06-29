@@ -1,0 +1,124 @@
+.top-section{
+    text-align: left;
+    margin: 4rem 6rem;
+}
+
+.head{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.page-subhead{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.tasks-container{
+    width: 80%;
+    background-color: var(--box-color);
+    margin: 4rem 6rem;
+    padding: 1.25rem;
+    border-radius: 5px;
+}
+
+.tasks-head{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem 1.25rem 1.25rem 1rem;
+    text-align: left;
+    color: var(--accent-color);
+}
+
+.tasks-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 10%);
+    background-color: var(--bg-color);
+}
+
+.task-name{
+    font-weight: 500;
+    font-size: large;
+    margin: 1rem 1.25rem 1.25rem 1rem;
+}
+
+.task-icon{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2.5rem;
+    margin-right: 1rem;
+}
+
+.icon-color{
+    color: var(--font-color);
+}
+
+.tasks-btn{
+    margin-top: 2rem;
+    text-align: end;
+}
+
+.modal-list{
+    color: var(--font-color);
+    margin: 3px;
+}
+
+.page-head{
+    color: var(--font-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.modal-title{
+    color: var(--font-color);
+    text-align: start;
+    padding: 5px;
+    margin: 5px 5px 0px 5px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.modal-subhead{
+    margin: 1.5rem;
+}
+
+.center-btn{
+    margin-left: 7rem;
+}
+
+.card-title{
+    color: var(--font-color);
+    text-align: start;
+    padding: 5px;
+    margin: 5px 5px 0px 5px;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.card-subhead{
+    color: var(--accent-color);
+    text-align: start;
+    padding: 5px;
+    margin: 15px;
+    font-weight: 600;
+}
+
+.inp-box{
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-modal{
+    margin-top: 2rem;
+}
