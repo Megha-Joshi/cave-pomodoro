@@ -1,0 +1,51 @@
+body {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+}
+
+.heading {
+    color: var(--accent-color);
+    margin: 1.313rem;
+    font-size: 4.375rem;
+    font-weight: 500;
+}
+
+.para-content {
+    margin: 1.563rem;
+    font-weight: 600;
+    line-height: 2rem;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.right-container {
+    width: 50%;
+}
+
+.home-img {
+    width: 35rem;
+}
+
+/* Override Component Library */
+
+.btn-info-outline:hover {
+    background-color: var(--bg-color);
+    text-decoration: underline;
+    color: var(--accent-color);
+}

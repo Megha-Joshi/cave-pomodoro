@@ -1,0 +1,12 @@
+.navi-head-section{
+    width: 100%;
+}
+
+.left-navi-section{
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+.right-navi-section{
+    gap: 2.5rem;
+}
