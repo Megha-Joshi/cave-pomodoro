@@ -37,6 +37,8 @@
     align-items: center;
     box-shadow: 2px 2px 6px 0px rgb(0 0 0 / 10%);
     background-color: var(--bg-color);
+    margin-bottom: 1rem;
+    border-radius: 3px;
 }
 
 .task-name{
