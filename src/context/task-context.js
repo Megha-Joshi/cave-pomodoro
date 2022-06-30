@@ -22,6 +22,7 @@ const TaskProvider = ({children}) => {
         name: "",
         duration: 0,
         description: "",
+        break: 0,
     })
 
     const taskCollectionRef = collection(db, "tasks");
@@ -43,6 +44,7 @@ const TaskProvider = ({children}) => {
             name: singleTask.name,
             duration: singleTask.duration,
             description: singleTask.description,
+            break: singleTask.break,
         });
         setTasks((val) => [
             ...val,
@@ -51,12 +53,14 @@ const TaskProvider = ({children}) => {
                 name: singleTask.name,
                 duration: singleTask.duration,
                 description: singleTask.description,
+                break: singleTask.break,
             },
         ]);
         setSingleTask({
             name: "",
             duration: "",
             description: "",
+            break: "",
         });
     };
 
@@ -73,6 +77,7 @@ const TaskProvider = ({children}) => {
             name: singleTask.name,
             duration: singleTask.duration,
             description: singleTask.description,
+            break: singleTask.break,
         };
         await updateDoc(selectedDocRef, dataToUpdate);
         const tasksAfterUpdate = tasks.map((item) => item.id === id ? {
@@ -86,6 +91,7 @@ const TaskProvider = ({children}) => {
             name: "",
             duration: "",
             description: "",
+            break: "",
         });
         navigate("/home");
     };

@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landingpage />}/>
         <Route path="/home" element={<Homepage />}/>
-        <Route path="/timer" element={<Timer />}/>
+        <Route path="/timer/:taskID" element={<Timer />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<Signup />}/>
       </Routes>
