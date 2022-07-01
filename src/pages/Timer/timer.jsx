@@ -23,13 +23,13 @@ const Timer = () => {
 
     const initialTimer = () => {
         remainingSecRef.current =
-			mode === "work" ? currTask.duration * 60 : 5*60;
+			mode === "work" ? currTask.duration * 60 : currTask.break*60;
         setRemainingSec(remainingSecRef.current);
     }
 
     const nextTimer = () => {
         const nextMode = modeRef.current === "work" ? "break" : "work";
-        const currSeconds = nextMode === "work" ? currTask.duration * 60 : 5*60;
+        const currSeconds = nextMode === "work" ? currTask.duration * 60 : currTask.break*60;
         setMode(nextMode);
         modeRef.current = nextMode;
         setRemainingSec(currSeconds);
@@ -56,7 +56,7 @@ const Timer = () => {
         return () => clearInterval(interval);
     }, [currTask, mode]);
 
-    const totalSeconds = mode === "work" ? currTask.duration * 60 : 5*60;
+    const totalSeconds = mode === "work" ? currTask.duration * 60 : currTask.break*60;
     const percentage = Math.round(remainingSec/totalSeconds  * 100);
 
     const minutes = Math.floor(remainingSec / 60);
