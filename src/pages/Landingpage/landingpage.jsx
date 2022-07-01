@@ -13,14 +13,9 @@ return(
             <section className="content-section">
                 <h2>Save your tasks by signing up!!! </h2>
                 <p className="para-content title title-content"><i>Pomodoro enables you to deeply focus on your current task and accomplish it in the fastest and most creative way. </i></p>
-                <div>
-                    <Link to="/signup">
-                    <button className="btn btn-info btn-text">JOIN NOW</button>
+                    <Link to="/home">
+                    <button className="btn btn-info btn-text">START</button>
                     </Link>
-                    <Link to="/login">
-                    <button className="btn btn-info-outline btn-text">Already have an account?</button>
-                    </Link>
-                </div>
             </section>
         </div>
         <div className="right-container">

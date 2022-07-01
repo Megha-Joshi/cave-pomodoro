@@ -10,7 +10,6 @@ return(
         </Link>
         <div class="right-navi-section">
             <span><i class="fas fa-moon"></i></span>
-            <span><i class="fas fa-sign-out-alt"></i></span>
         </div>
     </nav>
 </div>
