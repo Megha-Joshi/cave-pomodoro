@@ -45,6 +45,7 @@
     font-weight: 500;
     font-size: large;
     margin: 1rem 1.25rem 1.25rem 1rem;
+    color: var(--font-color);
 }
 
 .task-icon{
