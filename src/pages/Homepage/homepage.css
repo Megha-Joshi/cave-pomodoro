@@ -1,6 +1,6 @@
 .top-section{
     text-align: left;
-    margin: 4rem 6rem;
+    margin: 4% 10%;
 }
 
 .head{
@@ -18,7 +18,7 @@
 .tasks-container{
     width: 80%;
     background-color: var(--box-color);
-    margin: 4rem 6rem;
+    margin: 4% 10%;
     padding: 1.25rem;
     border-radius: 5px;
 }
