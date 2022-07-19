@@ -92,8 +92,8 @@ const Timer = () => {
                     <h1 className="right-head">{currTask.name}</h1>
                     <p className="right-desc">{currTask.description}</p>
                     <p className="right-desc">{currTask.duration} minute</p>
-                    <button className="btn btn-info btn-text" onClick={() => setMode("work")}>FOCUS</button>
-                    <button className="btn btn-info btn-text" onClick={() => setMode("break")}>BREAK</button>
+                    <button className="btn btn-info btn-text btn-timer" onClick={() => setMode("work")}>FOCUS</button>
+                    <button className="btn btn-info btn-text btn-timer" onClick={() => setMode("break")}>BREAK</button>
                     <p className="right-desc mode-color">Mode: {mode === "work" ? "Work" : "Break"}</p>
                 </section>
                 </div>

@@ -8,6 +8,9 @@ return(
 <div className="App">
 <Navbar />
     <div className="main-container">
+    <div className="right-container">
+            <img src="home.svg" alt="Notes" className="home-img" />
+        </div>
         <div className="left-container">
             <h1 className="heading">FOCUS CAVE</h1>
             <section className="content-section">
@@ -18,9 +21,9 @@ return(
                     </Link>
             </section>
         </div>
-        <div className="right-container">
+        {/* <div className="right-container">
             <img src="home.svg" alt="Notes" className="home-img" />
-        </div>
+        </div> */}
     </div>
 </div>
 )
