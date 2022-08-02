@@ -4,6 +4,7 @@ import "./homepage.css";
 import Modal from 'react-modal';
 import { Link } from "react-router-dom";
 import { useTask } from "../../context/task-context";
+// import toast from "react-hot-toast";
 
 const Homepage = () =>{
 
@@ -13,7 +14,8 @@ const { tasks, createTask, editTask, singleTask, setSingleTask, editing, setEdit
 
 const editTaskHandler = (task) =>{
 setModal(true);
-setSingleTask({...singleTask, name: task.name, duration: task.duration, description: task.description, break: task.break})
+setSingleTask({...singleTask, name: task.name, duration: task.duration, description: task.description, break:
+task.break})
 setCurrTask(task);
 setEditing(true);
 }
@@ -25,7 +27,12 @@ setSingleTask({name: "", duration: "", description: "", break: ""});
 setEditing(false);
 }
 else{
+if(singleTask.duration>0 && singleTask.break>0){
 createTask();
+setModal(false);
+}else{
+alert("Enter valid duration and time");
+}
 }
 }
 const customStyle = {
@@ -84,13 +91,13 @@ return(
                 <div className="time-container">
                     <div className="time-box">
                         <label className="time-head">Duration</label>
-                        <input type="number" placeholder="Time (minutes)" className="inp-box inp-time-box"
+                        <input type="number" placeholder="Time (minutes)" min="0" className="inp-box inp-time-box"
                             value={singleTask.duration} onChange={(e)=> setSingleTask({...singleTask, duration:
                         e.target.value})}/>
                     </div>
                     <div className="time-box">
                         <label className="time-head">Break</label>
-                        <input type="number" placeholder="Time (minutes)" className="inp-box inp-time-box"
+                        <input type="number" placeholder="Time (minutes)" min="0" className="inp-box inp-time-box"
                             value={singleTask.break} onChange={(e)=> setSingleTask({...singleTask, break:
                         e.target.value})}/>
                     </div>
